@@ -68,7 +68,7 @@ class TicTacToe
       WIN_COMBINATIONS.each {|combination| 
         return combination if 
           combination.all? {|position| @board[position] == "X"} ||  combination.all? {|position| @board[position] == "O"}}
-      # return false
+      return false
     end
   
     def full?
